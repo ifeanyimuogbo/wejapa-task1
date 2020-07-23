@@ -1,5 +1,5 @@
 const http = require('http');
-const port = 3005;
+const port = process.env.PORT || 3005;
 http
   .createServer((req, res) => {
     if (req.method === 'GET' && req.url === '/') {
